@@ -17,6 +17,14 @@
 
 
 / {
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                tri_layer {
+                if-layers = <1 2>;
+                then-layer = <3>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -60,19 +68,19 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
-        };
+       
 
-        adjust_layer {
+                adjust_layer {
                         bindings = <
    &tog WINDOWS &trans       &trans       &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
    &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans &trans &trans &trans &trans
    &trans       &trans       &trans       &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
-                                        &trans       &trans       &trans         &trans &trans &trans
+                                          &trans       &trans       &trans         &trans &trans &trans
                         >;
                 };
-        };
+       
 
-        windows_layer {
+                windows_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -85,5 +93,5 @@
                   &kp LALT &mo LOWER &kp SPACE   &mt LSHIFT RET &mo RAISE &kp LGUI
                         >;
                 };
-
+        };
 };
