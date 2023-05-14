@@ -1,0 +1,6 @@
+include:
+  - board: seeeduino_xiao_ble
+    shield: chippy_left
+  - board: seeeduino_xiao_ble
+    shield: chippy_right
+# there is no settingsreset (needed) for the XIAO
