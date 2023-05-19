@@ -28,7 +28,22 @@
         macros {
                 ZMK_MACRO(switch_to_mac, bindings= <&bt BT_SEL 0 &to DEFAULT>;)
                 ZMK_MACRO(switch_to_windows, bindings= <&bt BT_SEL 1 &to WINDOWS>;)
+        };
 
+        combos {
+                compatible = "zmk,combos";
+                combo_spotlight {
+                        timeout-ms = <50>;
+                        key-positions = <39 40>;
+                        bindings = <&kp LG(SPACE)>;
+                        layers = <DEFAULT>;
+                };
+                combo_start_menu {
+                        timeout-ms = <50>;
+                        key-positions = <39 40>;
+                        bindings = <&kp LGUI>;
+                        layers = <WINDOWS>;
+                };
         };
 
         keymap {
@@ -90,7 +105,6 @@
                         >;
                 };
        
-
                 adjust_layer {
                         bindings = <
    &trans       &trans          &trans              &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
