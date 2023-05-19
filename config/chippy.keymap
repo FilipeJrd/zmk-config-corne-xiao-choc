@@ -38,8 +38,8 @@
                 //         layers = <DEFAULT>;
                 // };
                 combo_start_menu {
-                        key-positions = <39 40>;
-                        bindings = <&kp A>;
+                        key-positions = <38 39>;
+                        bindings = <&kp LGUI>;
                         layers = <WINDOWS>;
                 };
         };
