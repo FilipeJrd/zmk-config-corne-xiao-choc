@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define DEFAULT 0
+#define MAC 0
 #define WINDOWS 1
 #define LOWER   2
 #define RAISE   3
@@ -26,17 +26,17 @@
         };
 
         macros {
-                ZMK_MACRO(switch_to_mac, bindings= <&bt BT_SEL 0 &to DEFAULT>;)
+                ZMK_MACRO(switch_to_mac, bindings= <&bt BT_SEL 0 &to MAC>;)
                 ZMK_MACRO(switch_to_windows, bindings= <&bt BT_SEL 1 &to WINDOWS>;)
         };
 
         combos {
                 compatible = "zmk,combos";
-                // combo_spotlight {
-                //         key-positions = <39 40>;
-                //         bindings = <&kp LG(SPACE)>;
-                //         layers = <DEFAULT>;
-                // };
+                combo_spotlight {
+                        key-positions = <38 39>;
+                        bindings = <&kp LG(SPACE)>;
+                        layers = <MAC>;
+                };
                 combo_start_menu {
                         key-positions = <38 39>;
                         bindings = <&kp LGUI>;
@@ -47,7 +47,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                mac_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
