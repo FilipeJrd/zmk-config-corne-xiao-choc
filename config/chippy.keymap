@@ -25,6 +25,12 @@
                 };
         };
 
+        macros {
+                ZMK_MACRO(switch_to_mac, bindings= <&bt BT_SEL 0 &to DEFAULT>;)
+                ZMK_MACRO(switch_to_windows, bindings= <&bt BT_SEL 1 &to WINDOWS>;)
+
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -87,10 +93,10 @@
 
                 adjust_layer {
                         bindings = <
-   &to DEFAULT  &to WINDOWS  &trans       &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
-   &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans &trans &trans &trans &trans
-   &trans       &trans       &trans       &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
-                                          &trans       &trans       &trans         &trans &trans &trans
+   &trans       &trans          &trans              &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
+   &bt BT_CLR   &switch_to_mac  &switch_to_windows  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans &trans &trans &trans &trans
+   &trans       &trans          &trans              &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
+                                                    &trans       &trans       &trans         &trans &trans &trans
                         >;
                 };
        
