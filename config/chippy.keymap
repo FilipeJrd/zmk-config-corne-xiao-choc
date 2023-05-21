@@ -28,6 +28,10 @@
         macros {
                 ZMK_MACRO(switch_to_mac, bindings= <&bt BT_SEL 0 &to MAC>;)
                 ZMK_MACRO(switch_to_windows, bindings= <&bt BT_SEL 1 &to WINDOWS>;)
+
+                ZMK_MACRO(copy_ctrl, bindings= <&kp LC(C)>;)
+                ZMK_MACRO(paste_ctrl, bindings= <&kp LC(V)>;)
+                ZMK_MACRO(cut_ctrl, bindings= <&kp LC(X)>;)
         };
 
         combos {
@@ -37,9 +41,15 @@
                         bindings = <&kp LG(SPACE)>;
                         layers = <MAC>;
                 };
-                combo_start_menu {
+                combo_spotlight_windows {
                         key-positions = <38 39>;
-                        bindings = <&kp LGUI>;
+                        bindings = <&kp LA(SPACE)>;
+                        layers = <WINDOWS>;
+                };
+
+                combo_app_selector_windows {
+                        key-positions = <1 2>;
+                        bindings = <&kt LALT &kp TAB>;
                         layers = <WINDOWS>;
                 };
         };
@@ -57,7 +67,7 @@
    &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo LOWER &kp SPACE   &mt LSHIFT RET &mo RAISE &kp RALT
+                  &kp LGUI &mo LOWER &kp SPACE   &mt LSHIFT RET &lt RAISE BSPC &kp RALT
                         >;
                 };
 
@@ -71,7 +81,7 @@
    &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LALT &mo LOWER &kp SPACE   &mt LSHIFT RET &mo RAISE &kp LGUI
+                  &kp LALT &mo LOWER &kp SPACE   &mt LSHIFT RET &lt RAISE BSPC &kp LGUI
                         >;
                 };
         
@@ -82,10 +92,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &trans    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT &kp F6 &kp F7 &kp F8 &kp F9 &kp F10  &trans   &trans   &trans &trans    &trans &trans
-                    &kp LGUI &trans &kp SPACE     &kp RET  &trans   &kp RALT
+   &trans  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &trans  &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &trans  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10  &trans   &trans   &trans &trans    &trans &trans
+                         &trans &trans &trans   &trans   &trans   &trans
                         >;
                 };
 
@@ -99,7 +109,7 @@
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &trans    &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                             &trans   &trans   &trans      &trans    &trans    &trans
                         >;
                 };
        
@@ -113,4 +123,15 @@
                 };
        
         };
+
+                mac_bindings_layers {
+                        bindings = <
+   &kp TAB      &trans          &trans              &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
+   &trans       &trans          &trans              &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
+   &trans       &trans          &kp LG(X)           &kp LG(C)    &kp LG(V)    &trans         &trans &trans &trans &trans &trans &trans
+                                                    &trans       &trans       &trans         &trans &trans &trans
+                        >;
+                };
+       
+        }; 
 };
