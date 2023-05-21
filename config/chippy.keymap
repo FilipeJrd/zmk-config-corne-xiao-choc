@@ -121,8 +121,6 @@
                                                     &trans       &trans       &trans         &trans &trans &trans
                         >;
                 };
-       
-        };
 
                 mac_bindings_layers {
                         bindings = <
