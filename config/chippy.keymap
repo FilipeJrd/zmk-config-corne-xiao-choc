@@ -64,14 +64,14 @@
                         label = "windows_tab_tap_dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;                                
-                        bindings = <&kp TAB>, <&kt LALT &kp TAB>;
+                        bindings = <&kp TAB>, <&kt LALT>;
                 };
                 mac_tab: mac_tab {
                         compatible = "zmk,behavior-tap-dance";
                         label = "mac_tab_tap_dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings =<&kp TAB>, <&kt LGUI &kp TAB>;
+                        bindings =<&kp TAB>, <&kt LGUI>;
                 };
     };
 
