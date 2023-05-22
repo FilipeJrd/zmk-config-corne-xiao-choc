@@ -10,20 +10,20 @@
 
 
 #define MAC 0
-#define MAC_BINDINGS 2
-#define WINDOWS 3
-#define WINDOWS_BINDINGS 4
-#define LOWER   5
-#define RAISE   6
-#define ADJUST  7
+#define MAC_BINDINGS 1
+#define WINDOWS 2
+#define WINDOWS_BINDINGS 3
+#define LOWER   4
+#define RAISE   5
+#define ADJUST  6
 
 
 / {
         conditional_layers {
                 compatible = "zmk,conditional-layers";
-                tri_layer {
-                if-layers = <LOWER RAISE>;
-                then-layer = <ADJUST>;
+                        tri_layer {
+                        if-layers = <LOWER RAISE>;
+                        then-layer = <ADJUST>;
                 };
         };
 
