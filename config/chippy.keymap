@@ -80,38 +80,38 @@
 
                 mac_layer {
                         bindings = <
-   &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &mac_tab      &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                   &kp LGUI &mo LOWER &kp SPACE  &mt LSHIFT RET &mo RAISE &kp RALT
+           &mo MAC_BINDINGS &mo LOWER &kp SPACE  &mt LSHIFT RET &mo RAISE &kp RALT
                         >;      
                 };
                 
                 mac_bindings_layers {
                         bindings = <
-   &trans       &trans          &trans              &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
-   &trans       &trans          &trans              &kp LG(F)    &trans       &trans         &trans &trans &trans &trans &trans &trans
-   &trans       &trans          &kp LG(X)           &kp LG(C)    &kp LG(V)    &trans         &trans &trans &trans &trans &trans &trans
-                                                    &trans       &trans       &trans         &trans &trans &trans
+   &trans       &trans          &trans              &trans       &trans       &trans         &kp LG(Y) &trans &trans &trans &trans &trans
+   &trans       &kp LG(A)       &kp LG(S)           &kp LG(D)    &kp LG(F)    &trans         &trans    &trans &trans &trans &trans &trans
+   &trans       &kp LG(Z)       &kp LG(X)           &kp LG(C)    &kp LG(V)    &trans         &trans    &trans &trans &trans &trans &trans
+                                                    &trans       &trans       &trans         &trans    &trans &trans
                         >;
                 };
 
                 windows_layer {
                         bindings = <
-   &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &win_tab      &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LALT &mo LOWER &kp SPACE   &mt LSHIFT RET &mo RAISE &kp LGUI
+                   &mo WINDOWS_BINDINGS &mo LOWER &kp SPACE   &mt LSHIFT RET &mo RAISE &kp LGUI
                         >;
                 };
 
                   
                 windows_bindings_layers {
                         bindings = <
-   &trans       &trans          &trans              &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
-   &trans       &kp LC(A)       &kp LC(S)           &kp LC(D)     &trans       &trans         &trans &trans &trans &trans &trans &trans
-   &trans       &kp LC(Z)       &kp LC(X)           &kp LC(C)    &kp LC(V)    &trans         &trans &trans &trans &trans &trans &trans
-                                                    &trans       &trans       &trans         &trans &trans &trans
+   &trans       &trans          &trans              &trans       &trans       &trans         &kp LC(Y) &trans &trans &trans &trans &trans
+   &trans       &kp LC(A)       &kp LC(S)           &kp LC(D)    &kp LC(F)    &trans         &trans    &trans &trans &trans &trans &trans
+   &trans       &kp LC(Z)       &kp LC(X)           &kp LC(C)    &kp LC(V)    &trans         &trans    &trans &trans &trans &trans &trans
+                                                    &trans       &trans       &trans         &trans    &trans &trans
                         >;
                 };
         
