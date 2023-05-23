@@ -30,12 +30,6 @@
         macros {
                 ZMK_MACRO(switch_to_mac, bindings= <&bt BT_SEL 0 &to MAC>;)
                 ZMK_MACRO(switch_to_windows, bindings= <&bt BT_SEL 1 &to WINDOWS>;)
-
-                ZMK_MACRO(copy_ctrl, bindings= <&kp LC(C)>;)
-                ZMK_MACRO(paste_ctrl, bindings= <&kp LC(V)>;)
-                ZMK_MACRO(cut_ctrl, bindings= <&kp LC(X)>;)
-
-                ZMK_MACRO(app_switcher_windows, bindings= <&sk LALT &kp TAB &sk LALT>;)
         };
 
         combos {
@@ -51,41 +45,17 @@
                         bindings = <&kp LA(SPACE)>;
                         layers = <WINDOWS>;
                 };
-
-                combo_app_selector_windows {
-                        key-positions = <1 2>;
-                        bindings = <&kt LALT &kp TAB>;
-                        layers = <WINDOWS>;
-                };
-        };
-
-
-        behaviors {
-                win_tab: windows_tab {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "windows_tab_tap_dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;                                
-                        bindings = <&kp TAB>, <&kt LALT>;
-                };
-                mac_tab: mac_tab {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "mac_tab_tap_dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings =<&kp TAB>, <&kt LGUI>;
-                };
-    };
+        };                      
 
         keymap {
                 compatible = "zmk,keymap";
 
                 mac_layer {
                         bindings = <
-   &mac_tab      &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-           &mo MAC_BINDINGS &mo LOWER &kp SPACE  &mt LSHIFT RET &mo RAISE &kp RALT
+   &kp TAB         &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &mt LCTRL ESC    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT        &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &mo MAC_BINDINGS &mo LOWER      &mt LGUI SPACE   &mt LSHIFT RET &mo RAISE &kp RALT
                         >;      
                 };
                 
@@ -103,17 +73,17 @@
    &kp TAB                &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LCTRL ESC          &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT              &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-               &mo WINDOWS_BINDINGS &mo LOWER &kp SPACE   &mt LSHIFT RET &mo RAISE &kp LGUI
+          &mo WINDOWS_BINDINGS &mo LOWER &mt LALT SPACE   &mt LSHIFT RET &mo RAISE &kp LGUI
                         >;
                 };
 
                   
                 windows_bindings_layers {
                         bindings = <
-   &app_switcher_windows        &trans          &trans          &trans       &trans       &trans         &kp LC(Y) &trans &trans &trans &trans &trans
-   &trans                       &kp LC(A)       &kp LC(S)       &kp LC(D)    &kp LC(F)    &trans         &trans    &trans &trans &trans &trans &trans
-   &trans                       &kp LC(Z)       &kp LC(X)       &kp LC(C)    &kp LC(V)    &trans         &trans    &trans &trans &trans &trans &trans
-                                                &trans       &trans       &trans                         &trans    &trans &trans
+   &trans        &trans          &trans          &trans       &trans       &trans         &kp LC(Y) &trans &trans &trans &trans &trans
+   &trans        &kp LC(A)       &kp LC(S)       &kp LC(D)    &kp LC(F)    &trans         &trans    &trans &trans &trans &trans &trans
+   &trans        &kp LC(Z)       &kp LC(X)       &kp LC(C)    &kp LC(V)    &trans         &trans    &trans &trans &trans &trans &trans
+                          &trans       &trans       &trans                         &trans    &trans &trans
                         >;
                 };
         
