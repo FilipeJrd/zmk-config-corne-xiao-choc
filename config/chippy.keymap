@@ -156,6 +156,26 @@
                         bindings = <&kp LC(Z)>;
                         layers = <WINDOWS>;
                 };
+                combo_select_windows {
+                        key-positions = <LM4 LM1>;
+                        bindings = <&kp LC(A)>;
+                        layers = <WINDOWS>;
+                };
+                combo_save_windows {
+                        key-positions = <LM4 LM3>;
+                        bindings = <&kp LC(S)>;
+                        layers = <WINDOWS>;
+                };
+                combo_find_windows {
+                        key-positions = <LM2 LM1>;
+                        bindings = <&kp LC(F)>;
+                        layers = <WINDOWS>;
+                };
+                combo_close_window_windows {
+                        key-positions = <LT3 LT1>;
+                        bindings = <&kp LC(W)>;
+                        layers = <WINDOWS>;
+                };
                 combo_copy_mac {
                         key-positions = <LB3 LB2>;
                         bindings = <&kp LG(C)>;
@@ -176,8 +196,26 @@
                         bindings = <&kp LG(Z)>;
                         layers = <MAC>;
                 };
-                
-
+                combo_select_mac {
+                        key-positions = <LM4 LM1>;
+                        bindings = <&kp LG(A)>;
+                        layers = <MAC>;
+                };
+                combo_save_mac {
+                        key-positions = <LM4 LM3>;
+                        bindings = <&kp LG(S)>;
+                        layers = <MAC>;
+                };
+                combo_find_mac {
+                        key-positions = <LM2 LM1>;
+                        bindings = <&kp LG(F)>;
+                        layers = <MAC>;
+                };
+                combo_close_window_mac {
+                        key-positions = <LT3 LT1>;
+                        bindings = <&kp LG(W)>;
+                        layers = <MAC>;
+                };
         };                      
 
         keymap {
