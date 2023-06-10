@@ -79,6 +79,7 @@
 
         macros {
                 ZMK_MACRO(switch_to_mac, bindings= <&bt BT_SEL 0 &to MAC>;)
+                ZMK_MACRO(switch_to_ipad, bindings= <&bt BT_SEL 3 &to MAC>;)
                 ZMK_MACRO(switch_to_windows, bindings= <&bt BT_SEL 1 &to WINDOWS>;)
 
                 win_app_sw: win_app_sw {
@@ -278,10 +279,10 @@
        
                 adjust_layer {
                         bindings = <
-   &trans       &trans          &trans              &trans       &trans       &trans         &trans &trans &trans &trans &trans &trans
-   &bt BT_CLR   &switch_to_mac  &switch_to_windows  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans &trans &trans &trans &trans
-   &bootloader  &trans          &trans              &trans       &trans       &trans         &trans &trans &trans &trans &trans &bootloader
-                                                    &trans       &trans       &trans         &trans &trans &trans
+   &trans       &trans          &trans              &trans          &trans       &trans         &trans &trans &trans &trans &trans &trans
+   &bt BT_CLR   &switch_to_mac  &switch_to_windows  &switch_to_ipad &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans &trans &trans &trans &trans
+   &bootloader  &trans          &trans              &trans          &trans       &trans         &trans &trans &trans &trans &trans &bootloader
+                                                    &trans          &trans       &trans         &trans &trans &trans
                         >;
                 };       
         }; 
