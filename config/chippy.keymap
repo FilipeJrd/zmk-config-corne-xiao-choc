@@ -177,46 +177,46 @@
                         bindings = <&kp LC(W)>;
                         layers = <WINDOWS>;
                 };
-                combo_copy_mac {
-                        key-positions = <LB3 LB2>;
-                        bindings = <&kp LG(C)>;
-                        layers = <MAC>;
-                };
-                combo_paste_mac {
-                        key-positions = <LB2 LB1>;
-                        bindings = <&kp LG(V)>;
-                        layers = <MAC>;
-                };
-                combo_cut_mac {
-                        key-positions = <LB3 LB1>;
-                        bindings = <&kp LG(X)>;
-                        layers = <MAC>;
-                };
-                combo_undo_mac {
-                        key-positions = <LB4 LB3>;
-                        bindings = <&kp LG(Z)>;
-                        layers = <MAC>;
-                };
-                combo_select_mac {
-                        key-positions = <LM4 LM1>;
-                        bindings = <&kp LG(A)>;
-                        layers = <MAC>;
-                };
-                combo_save_mac {
-                        key-positions = <LM4 LM3>;
-                        bindings = <&kp LG(S)>;
-                        layers = <MAC>;
-                };
-                combo_find_mac {
-                        key-positions = <LM2 LM1>;
-                        bindings = <&kp LG(F)>;
-                        layers = <MAC>;
-                };
-                combo_close_window_mac {
-                        key-positions = <LT3 LT1>;
-                        bindings = <&kp LG(W)>;
-                        layers = <MAC>;
-                };
+                // combo_copy_mac {
+                //         key-positions = <LB3 LB2>;
+                //         bindings = <&kp LG(C)>;
+                //         layers = <MAC>;
+                // };
+                // combo_paste_mac {
+                //         key-positions = <LB2 LB1>;
+                //         bindings = <&kp LG(V)>;
+                //         layers = <MAC>;
+                // };
+                // combo_cut_mac {
+                //         key-positions = <LB3 LB1>;
+                //         bindings = <&kp LG(X)>;
+                //         layers = <MAC>;
+                // };
+                // combo_undo_mac {
+                //         key-positions = <LB4 LB3>;
+                //         bindings = <&kp LG(Z)>;
+                //         layers = <MAC>;
+                // };
+                // combo_select_mac {
+                //         key-positions = <LM4 LM1>;
+                //         bindings = <&kp LG(A)>;
+                //         layers = <MAC>;
+                // };
+                // combo_save_mac {
+                //         key-positions = <LM4 LM3>;
+                //         bindings = <&kp LG(S)>;
+                //         layers = <MAC>;
+                // };
+                // combo_find_mac {
+                //         key-positions = <LM2 LM1>;
+                //         bindings = <&kp LG(F)>;
+                //         layers = <MAC>;
+                // };
+                // combo_close_window_mac {
+                //         key-positions = <LT3 LT1>;
+                //         bindings = <&kp LG(W)>;
+                //         layers = <MAC>;
+                // };
         };                      
 
         keymap {
