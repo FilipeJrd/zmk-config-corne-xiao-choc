@@ -203,16 +203,16 @@
                         bindings = <&kp LG(A)>;
                         layers = <MAC>;
                 };
-                // combo_save_mac {
-                //         key-positions = <LM4 LM3>;
-                //         bindings = <&kp LG(S)>;
-                //         layers = <MAC>;
-                // };
-                // combo_find_mac {
-                //         key-positions = <LM2 LM1>;
-                //         bindings = <&kp LG(F)>;
-                //         layers = <MAC>;
-                // };
+                combo_save_mac {
+                        key-positions = <LM4 LM3>;
+                        bindings = <&kp LG(S)>;
+                        layers = <MAC>;
+                };
+                combo_find_mac {
+                        key-positions = <LM2 LM1>;
+                        bindings = <&kp LG(F)>;
+                        layers = <MAC>;
+                };
                 combo_close_window_mac {
                         key-positions = <LT3 LT1>;
                         bindings = <&kp LG(W)>;
