@@ -200,7 +200,7 @@
                 };
                 combo_select_mac {
                         key-positions = <LM4 LM1>;
-                        bindings = <&kp LG(A);
+                        bindings = <&kp LG(A)>;
                         layers = <MAC>;
                 };
                 // combo_save_mac {
