@@ -177,26 +177,26 @@
                         bindings = <&kp LC(W)>;
                         layers = <WINDOWS>;
                 };
-                // combo_copy_mac {
-                //         key-positions = <LB3 LB2>;
-                //         bindings = <&kp LG(C)>;
-                //         layers = <MAC>;
-                // };
-                // combo_paste_mac {
-                //         key-positions = <LB2 LB1>;
-                //         bindings = <&kp LG(V)>;
-                //         layers = <MAC>;
-                // };
-                // combo_cut_mac {
-                //         key-positions = <LB3 LB1>;
-                //         bindings = <&kp LG(X)>;
-                //         layers = <MAC>;
-                // };
-                // combo_undo_mac {
-                //         key-positions = <LB4 LB3>;
-                //         bindings = <&kp LG(Z)>;
-                //         layers = <MAC>;
-                // };
+                combo_copy_mac {
+                        key-positions = <LB3 LB2>;
+                        bindings = <&kp LG(C)>;
+                        layers = <MAC>;
+                };
+                combo_paste_mac {
+                        key-positions = <LB2 LB1>;
+                        bindings = <&kp LG(V)>;
+                        layers = <MAC>;
+                };
+                combo_cut_mac {
+                        key-positions = <LB3 LB1>;
+                        bindings = <&kp LG(X)>;
+                        layers = <MAC>;
+                };
+                combo_undo_mac {
+                        key-positions = <LB4 LB3>;
+                        bindings = <&kp LG(Z)>;
+                        layers = <MAC>;
+                };
                 // combo_select_mac {
                 //         key-positions = <LM4 LM1>;
                 //         bindings = <&kp LG(A)>;
