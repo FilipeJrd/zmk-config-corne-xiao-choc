@@ -130,12 +130,6 @@
                         bindings = <&win_app_sw>;
                         layers = <WINDOWS>;
                 };
-                
-                combo_app_switcher_mac {
-                        key-positions = <LM4 LM3 LM2 LM1>;
-                        bindings = <&mac_app_sw>;
-                        layers = <MAC>;
-                };
 
                 combo_copy_windows {
                         key-positions = <LB3 LB2>;
@@ -177,6 +171,13 @@
                         bindings = <&kp LC(W)>;
                         layers = <WINDOWS>;
                 };
+                
+                combo_app_switcher_mac {
+                        key-positions = <LM4 LM3 LM2 LM1>;
+                        bindings = <&mac_app_sw>;
+                        layers = <MAC>;
+                };
+                
                 combo_copy_mac {
                         key-positions = <LB3 LB2>;
                         bindings = <&kp LG(C)>;
@@ -197,11 +198,11 @@
                         bindings = <&kp LG(Z)>;
                         layers = <MAC>;
                 };
-                // combo_select_mac {
-                //         key-positions = <LM4 LM1>;
-                //         bindings = <&kp LG(A)>
-                //         layers = <MAC>;
-                // };
+                combo_select_mac {
+                        key-positions = <LM4 LM1>;
+                        bindings = <&kp LG(A)>
+                        layers = <MAC>;
+                };
                 // combo_save_mac {
                 //         key-positions = <LM4 LM3>;
                 //         bindings = <&kp LG(S)>;
