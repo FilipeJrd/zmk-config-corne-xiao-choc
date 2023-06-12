@@ -79,7 +79,7 @@
 
         macros {
                 ZMK_MACRO(switch_to_mac, bindings= <&bt BT_SEL 0 &to MAC>;)
-                ZMK_MACRO(switch_to_ipad, bindings= <&bt BT_SEL 3 &to MAC>;)
+                ZMK_MACRO(switch_to_ipad, bindings= <&bt BT_SEL 2 &to MAC>;)
                 ZMK_MACRO(switch_to_windows, bindings= <&bt BT_SEL 1 &to WINDOWS>;)
 
                 win_app_sw: win_app_sw {
