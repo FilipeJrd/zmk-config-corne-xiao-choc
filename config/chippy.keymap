@@ -156,11 +156,12 @@
                         bindings = <&kp LC(A)>;
                         layers = <WINDOWS>;
                 };
+                /*
                 combo_save_windows {
                         key-positions = <LM4 LM3>;
                         bindings = <&kp LC(S)>;
                         layers = <WINDOWS>;
-                };
+                };*/
                 combo_find_windows {
                         key-positions = <LM2 LM1>;
                         bindings = <&kp LC(F)>;
@@ -202,12 +203,12 @@
                         key-positions = <LM4 LM1>;
                         bindings = <&kp LG(A)>;
                         layers = <MAC>;
-                };
+                };/*
                 combo_save_mac {
                         key-positions = <LM4 LM3>;
                         bindings = <&kp LG(S)>;
                         layers = <MAC>;
-                };
+                };*/
                 combo_find_mac {
                         key-positions = <LM2 LM1>;
                         bindings = <&kp LG(F)>;
