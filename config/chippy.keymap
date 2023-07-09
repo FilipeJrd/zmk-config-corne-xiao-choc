@@ -113,108 +113,128 @@
 
         combos {
                 compatible = "zmk,combos";
-                combo_spotlight {
+                combo_spotlight {         
+                        timeout-ms = <15>
                         key-positions = <LH0 RH0>;
                         bindings = <&kp LG(SPACE)>;
                         layers = <MAC>;
                 };
 
-                combo_spotlight_windows {
+                combo_spotlight_windows {         
+                        timeout-ms = <15>
                         key-positions = <LH0 RH0>;
                         bindings = <&kp LA(SPACE)>;
                         layers = <WINDOWS>;
                 };
 
-                combo_app_switcher_windows {
+                combo_app_switcher_windows {         
+                        timeout-ms = <15>
                         key-positions = <LM4 LM3 LM2 LM1>;
                         bindings = <&win_app_sw>;
                         layers = <WINDOWS>;
                 };
 
-                combo_copy_windows {
+                combo_copy_windows {         
+                        timeout-ms = <15>
                         key-positions = <LB3 LB2>;
                         bindings = <&kp LC(C)>;
                         layers = <WINDOWS>;
                 };
-                combo_paste_windows {
+                combo_paste_windows {         
+                        timeout-ms = <15>
                         key-positions = <LB2 LB1>;
                         bindings = <&kp LC(V)>;
                         layers = <WINDOWS>;
                 };
-                combo_cut_windows {
+                combo_cut_windows {         
+                        timeout-ms = <15>
                         key-positions = <LB3 LB1>;
                         bindings = <&kp LC(X)>;
                         layers = <WINDOWS>;
                 };
-                combo_undo_windows {
+                combo_undo_windows {         
+                        timeout-ms = <15>
                         key-positions = <LB4 LB3>;
                         bindings = <&kp LC(Z)>;
                         layers = <WINDOWS>;
                 };
-                combo_select_windows {
+                combo_select_windows {         
+                        timeout-ms = <15>
                         key-positions = <LM4 LM1>;
                         bindings = <&kp LC(A)>;
                         layers = <WINDOWS>;
                 };
                 /*
-                combo_save_windows {
+                combo_save_windows {         
+                        timeout-ms = <15>
                         key-positions = <LM4 LM3>;
                         bindings = <&kp LC(S)>;
                         layers = <WINDOWS>;
                 };*/
-                combo_find_windows {
+                combo_find_windows {         
+                        timeout-ms = <15>
                         key-positions = <LM2 LM1>;
                         bindings = <&kp LC(F)>;
                         layers = <WINDOWS>;
                 };
-                combo_close_window_windows {
+                combo_close_window_windows {         
+                        timeout-ms = <15>
                         key-positions = <LT3 LT1>;
                         bindings = <&kp LC(W)>;
                         layers = <WINDOWS>;
                 };
                 
-                combo_app_switcher_mac {
+                combo_app_switcher_mac {         
+                        timeout-ms = <15>
                         key-positions = <LM4 LM3 LM2 LM1>;
                         bindings = <&mac_app_sw>;
                         layers = <MAC>;
                 };
                 
-                combo_copy_mac {
+                combo_copy_mac {         
+                        timeout-ms = <15>
                         key-positions = <LB3 LB2>;
                         bindings = <&kp LG(C)>;
                         layers = <MAC>;
                 };
-                combo_paste_mac {
+                combo_paste_mac {         
+                        timeout-ms = <15>
                         key-positions = <LB2 LB1>;
                         bindings = <&kp LG(V)>;
                         layers = <MAC>;
                 };
-                combo_cut_mac {
+                combo_cut_mac {         
+                        timeout-ms = <15>
                         key-positions = <LB3 LB1>;
                         bindings = <&kp LG(X)>;
                         layers = <MAC>;
                 };
-                combo_undo_mac {
+                combo_undo_mac {         
+                        timeout-ms = <15>
                         key-positions = <LB4 LB3>;
                         bindings = <&kp LG(Z)>;
                         layers = <MAC>;
                 };
-                combo_select_mac {
+                combo_select_mac {         
+                        timeout-ms = <15>
                         key-positions = <LM4 LM1>;
                         bindings = <&kp LG(A)>;
                         layers = <MAC>;
                 };/*
-                combo_save_mac {
+                combo_save_mac {         
+                        timeout-ms = <15>
                         key-positions = <LM4 LM3>;
                         bindings = <&kp LG(S)>;
                         layers = <MAC>;
                 };*/
-                combo_find_mac {
+                combo_find_mac {         
+                        timeout-ms = <15>
                         key-positions = <LM2 LM1>;
                         bindings = <&kp LG(F)>;
                         layers = <MAC>;
                 };
                 combo_close_window_mac {
+                        timeout-ms = <15>
                         key-positions = <LT3 LT1>;
                         bindings = <&kp LG(W)>;
                         layers = <MAC>;
